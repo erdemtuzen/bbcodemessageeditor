@@ -1,2 +1,0 @@
-# bbcodemessageeditor
-BBcode Message Editor
