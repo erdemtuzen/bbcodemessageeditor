@@ -1,0 +1,11 @@
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\bin\Debug\MessageEditor.exe.config
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\bin\Debug\MessageEditor.exe
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\bin\Debug\MessageEditor.pdb
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.csprojResolveAssemblyReference.cache
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.MessageEditor.resources
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.Properties.Resources.resources
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.csproj.GenerateResource.Cache
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.exe
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.pdb
+c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.AboutBox.resources
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.Preview.resources
