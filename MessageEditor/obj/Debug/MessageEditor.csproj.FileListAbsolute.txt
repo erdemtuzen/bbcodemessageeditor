@@ -9,3 +9,14 @@ c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\Message
 c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.pdb
 c:\users\erdem.tuzen\documents\visual studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.AboutBox.resources
 C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\MessageEditor\obj\Debug\MessageEditor.Preview.resources
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\bin\Debug\MessageEditor.exe.config
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\obj\Debug\MessageEditor.exe
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\obj\Debug\MessageEditor.pdb
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\bin\Debug\MessageEditor.exe
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\bin\Debug\MessageEditor.pdb
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\obj\Debug\MessageEditor.csprojResolveAssemblyReference.cache
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\obj\Debug\MessageEditor.AboutBox.resources
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\obj\Debug\MessageEditor.MessageEditor.resources
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\obj\Debug\MessageEditor.Preview.resources
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\obj\Debug\MessageEditor.Properties.Resources.resources
+C:\Users\erdem.tuzen\Documents\Visual Studio 2013\Projects\MessageEditor\bbcodemessageeditor\MessageEditor\obj\Debug\MessageEditor.csproj.GenerateResource.Cache

@@ -13,6 +13,7 @@
 
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 
@@ -23,6 +24,49 @@ namespace MessageEditor
         public MessageEditor()
         {
             InitializeComponent();
+
+            FillFontComboBox();
+            FillSizeComboBox();
+        }
+
+        private void FillFontComboBox()
+        {
+            var items = new[] { 
+                                new { Text = "Yazı Tipi", Value = "Yazı Tipi"}, 
+                                new { Text = "Arial", Value = "Arial" }, 
+                                new { Text = "Courier", Value = "Courier" }, 
+                                new { Text = "Times", Value = "Times" },
+                                new { Text = "Verdana", Value = "Verdana" },
+                                new { Text = "Wingdings", Value = "Wingdings" }
+                               };
+
+            FontComboBox.DataSource = items;
+            FontComboBox.DisplayMember = "Text";
+            FontComboBox.ValueMember = "Value";
+
+            FontComboBox.SelectedIndex = 0;
+
+        }
+
+        private void FillSizeComboBox()
+        {
+            var items = new[] { 
+                                new { Text = "Yazı Boyutu", Value =  "Yazı Boyutu" }, 
+                                new { Text = "1", Value = "1" }, 
+                                new { Text = "2", Value = "2" }, 
+                                new { Text = "3", Value = "3" },
+                                new { Text = "4", Value = "4" },
+                                new { Text = "5", Value = "5" },
+                                new { Text = "6", Value = "6" },
+                                new { Text = "7", Value = "7" }
+                               };
+
+            SizeComboBox.DataSource = items;
+            SizeComboBox.DisplayMember = "Text";
+            SizeComboBox.ValueMember = "Value";
+
+            SizeComboBox.SelectedIndex = 0;
+
         }
 
         private void ClickEvent(object sender, EventArgs e)
@@ -56,7 +100,7 @@ namespace MessageEditor
                         if (saveFileDialog.ShowDialog() == DialogResult.OK)
                         {
                             string path = saveFileDialog.FileName;
-                            StreamWriter sw = new StreamWriter(path=path.Contains(".txt")?path:path+".txt");
+                            StreamWriter sw = new StreamWriter(path = path.Contains(".txt") ? path : path + ".txt");
                             sw.Write(TextBoxPostArea.Text);
                             sw.Close();
                         }
@@ -164,11 +208,25 @@ namespace MessageEditor
                 }
 
             }
+            else if (sender is ComboBox)
+            {
+                ComboBox comboBox = (ComboBox)sender;
+
+                string value = comboBox.SelectedValue.ToString();
+
+                if (!value.Contains("Yazı"))
+                {
+                    if (comboBox.Name.Contains("Font"))
+                        TextBoxPostArea.SelectedText = string.Format(" [FONT={0}]{1}[/FONT] ", value, TextBoxPostArea.SelectedText);
+                    else
+                        TextBoxPostArea.SelectedText = string.Format(" [SIZE={0}]{1}[/FONT] ", value, TextBoxPostArea.SelectedText);
+                }
+            }
         }
 
         private string CreatePreviewHtml(string html)
         {
-            Helper.FormatHtmlIntoBBCode(html);
+            //Helper.FormatHtmlIntoBBCode(html);
             return html;
         }
 

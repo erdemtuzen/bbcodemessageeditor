@@ -95,6 +95,8 @@
             this.PictureBoxAboutUs = new System.Windows.Forms.PictureBox();
             this.ButtonExport = new System.Windows.Forms.Button();
             this.ButtonImport = new System.Windows.Forms.Button();
+            this.FontComboBox = new System.Windows.Forms.ComboBox();
+            this.SizeComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIndent)).BeginInit();
@@ -149,6 +151,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.SizeComboBox);
+            this.groupBox1.Controls.Add(this.FontComboBox);
             this.groupBox1.Controls.Add(this.LabelLimeGreen);
             this.groupBox1.Controls.Add(this.LabelCyan);
             this.groupBox1.Controls.Add(this.LabelMagenta);
@@ -178,7 +182,7 @@
             this.LabelLimeGreen.AutoSize = true;
             this.LabelLimeGreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelLimeGreen.ForeColor = System.Drawing.Color.LimeGreen;
-            this.LabelLimeGreen.Location = new System.Drawing.Point(220, 87);
+            this.LabelLimeGreen.Location = new System.Drawing.Point(220, 77);
             this.LabelLimeGreen.Name = "LabelLimeGreen";
             this.LabelLimeGreen.Size = new System.Drawing.Size(72, 15);
             this.LabelLimeGreen.TabIndex = 15;
@@ -190,7 +194,7 @@
             this.LabelCyan.AutoSize = true;
             this.LabelCyan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelCyan.ForeColor = System.Drawing.Color.Cyan;
-            this.LabelCyan.Location = new System.Drawing.Point(219, 62);
+            this.LabelCyan.Location = new System.Drawing.Point(219, 56);
             this.LabelCyan.Name = "LabelCyan";
             this.LabelCyan.Size = new System.Drawing.Size(67, 15);
             this.LabelCyan.TabIndex = 15;
@@ -202,7 +206,7 @@
             this.LabelMagenta.AutoSize = true;
             this.LabelMagenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelMagenta.ForeColor = System.Drawing.Color.Magenta;
-            this.LabelMagenta.Location = new System.Drawing.Point(123, 87);
+            this.LabelMagenta.Location = new System.Drawing.Point(123, 77);
             this.LabelMagenta.Name = "LabelMagenta";
             this.LabelMagenta.Size = new System.Drawing.Size(52, 15);
             this.LabelMagenta.TabIndex = 15;
@@ -214,7 +218,7 @@
             this.LabelBrown.AutoSize = true;
             this.LabelBrown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelBrown.ForeColor = System.Drawing.Color.Brown;
-            this.LabelBrown.Location = new System.Drawing.Point(71, 87);
+            this.LabelBrown.Location = new System.Drawing.Point(71, 77);
             this.LabelBrown.Name = "LabelBrown";
             this.LabelBrown.Size = new System.Drawing.Size(46, 15);
             this.LabelBrown.TabIndex = 14;
@@ -226,7 +230,7 @@
             this.LabelOrange.AutoSize = true;
             this.LabelOrange.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelOrange.ForeColor = System.Drawing.Color.Orange;
-            this.LabelOrange.Location = new System.Drawing.Point(6, 87);
+            this.LabelOrange.Location = new System.Drawing.Point(6, 77);
             this.LabelOrange.Name = "LabelOrange";
             this.LabelOrange.Size = new System.Drawing.Size(59, 15);
             this.LabelOrange.TabIndex = 13;
@@ -238,7 +242,7 @@
             this.LabelYellow.AutoSize = true;
             this.LabelYellow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelYellow.ForeColor = System.Drawing.Color.Yellow;
-            this.LabelYellow.Location = new System.Drawing.Point(181, 87);
+            this.LabelYellow.Location = new System.Drawing.Point(181, 77);
             this.LabelYellow.Name = "LabelYellow";
             this.LabelYellow.Size = new System.Drawing.Size(33, 15);
             this.LabelYellow.TabIndex = 12;
@@ -250,7 +254,7 @@
             this.LabelGreen.AutoSize = true;
             this.LabelGreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelGreen.ForeColor = System.Drawing.Color.Green;
-            this.LabelGreen.Location = new System.Drawing.Point(171, 62);
+            this.LabelGreen.Location = new System.Drawing.Point(171, 56);
             this.LabelGreen.Name = "LabelGreen";
             this.LabelGreen.Size = new System.Drawing.Size(38, 15);
             this.LabelGreen.TabIndex = 11;
@@ -262,7 +266,7 @@
             this.LabelRed.AutoSize = true;
             this.LabelRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelRed.ForeColor = System.Drawing.Color.Red;
-            this.LabelRed.Location = new System.Drawing.Point(109, 62);
+            this.LabelRed.Location = new System.Drawing.Point(109, 56);
             this.LabelRed.Name = "LabelRed";
             this.LabelRed.Size = new System.Drawing.Size(52, 15);
             this.LabelRed.TabIndex = 10;
@@ -274,7 +278,7 @@
             this.LabelBlue.AutoSize = true;
             this.LabelBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelBlue.ForeColor = System.Drawing.Color.Blue;
-            this.LabelBlue.Location = new System.Drawing.Point(62, 62);
+            this.LabelBlue.Location = new System.Drawing.Point(62, 56);
             this.LabelBlue.Name = "LabelBlue";
             this.LabelBlue.Size = new System.Drawing.Size(37, 15);
             this.LabelBlue.TabIndex = 9;
@@ -286,7 +290,7 @@
             this.LabelWhite.AutoSize = true;
             this.LabelWhite.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelWhite.ForeColor = System.Drawing.Color.White;
-            this.LabelWhite.Location = new System.Drawing.Point(6, 62);
+            this.LabelWhite.Location = new System.Drawing.Point(6, 56);
             this.LabelWhite.Name = "LabelWhite";
             this.LabelWhite.Size = new System.Drawing.Size(45, 15);
             this.LabelWhite.TabIndex = 8;
@@ -928,6 +932,24 @@
             this.ButtonImport.UseVisualStyleBackColor = true;
             this.ButtonImport.Click += new System.EventHandler(this.ClickEvent);
             // 
+            // FontComboBox
+            // 
+            this.FontComboBox.FormattingEnabled = true;
+            this.FontComboBox.Location = new System.Drawing.Point(6, 99);
+            this.FontComboBox.Name = "FontComboBox";
+            this.FontComboBox.Size = new System.Drawing.Size(138, 21);
+            this.FontComboBox.TabIndex = 16;
+            this.FontComboBox.SelectedIndexChanged += new System.EventHandler(this.ClickEvent);
+            // 
+            // SizeComboBox
+            // 
+            this.SizeComboBox.FormattingEnabled = true;
+            this.SizeComboBox.Location = new System.Drawing.Point(150, 99);
+            this.SizeComboBox.Name = "SizeComboBox";
+            this.SizeComboBox.Size = new System.Drawing.Size(139, 21);
+            this.SizeComboBox.TabIndex = 16;
+            this.SizeComboBox.SelectedIndexChanged += new System.EventHandler(this.ClickEvent);
+            // 
             // MessageEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1076,6 +1098,8 @@
         private System.Windows.Forms.PictureBox PictureBoxAboutUs;
         private System.Windows.Forms.Button ButtonExport;
         private System.Windows.Forms.Button ButtonImport;
+        private System.Windows.Forms.ComboBox SizeComboBox;
+        private System.Windows.Forms.ComboBox FontComboBox;
     }
 }
 
