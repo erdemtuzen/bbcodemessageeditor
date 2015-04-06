@@ -5,4 +5,4 @@ Post BBCode Editor for some forum sites
 
 Messages are made for faster and more effective regulation
 
-Uygulama yada kodlar ile ilgili her türlü soru ve sorununuzu sorabilirsiniz.
+All kinds of questions about the application or code and you can ask your questions.
